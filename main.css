@@ -1,0 +1,259 @@
+@font-face {
+  font-family: HeadingFont;
+  src: url(fonts/Notable-Regular.ttf);
+}
+@font-face {
+  font-family: BodyFont;
+  src: url(fonts/Lobster-Regular.ttf);
+}
+@font-face {
+  font-family: NavFont;
+  src: url(fonts/Foldit/static/Foldit-SemiBold.ttf);
+}
+
+.left-container {
+  font-size: 70px;
+  border-radius: 0 10px 10px 0px;
+  position: fixed;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  /* visibility: hidden; */
+  left: 0;
+  width: 0;
+
+  transition: all 1s ease;
+
+  height: 100vh;
+
+  overflow: hidden;
+  z-index: 1;
+}
+.left-container.active {
+  width: 50%;
+  opacity: 1;
+}
+.left-container a {
+  font-size: 70px;
+  width: 100%;
+}
+.left-container a:hover {
+  transform: scale(0.9);
+  background-color: #1a1a1a;
+  border-radius: 10px 0 10px;
+}
+#res {
+  margin-bottom: 40px;
+  font-size: 150px;
+}
+h1 {
+  font-family: HeadingFont;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: aqua; */
+  min-height: 100vh;
+}
+.container {
+  /* border: 2px solid aqua; */
+
+  background-color: #1a1a1a;
+  height: 20rem;
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+
+  align-items: center;
+  flex-direction: column;
+}
+.navbar {
+  width: auto;
+  /* border: 1px solid red; */
+  max-width: 50rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 1px 1px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50rem;
+  height: 2rem;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(137, 134, 134, 0.241);
+  backdrop-filter: blur(100px);
+}
+.hero-section {
+  width: 100%;
+  margin: 20px;
+
+  font-size: 100px;
+  /* border: 2px solid green; */
+  width: 100%;
+
+  text-align: center;
+}
+#main-btn {
+  font-family: HeadingFont;
+  justify-content: center;
+  padding: 30px;
+  width: 200px;
+  background-color: antiquewhite;
+  border: none;
+  box-shadow: 1px 1px 5px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+#main-btn:hover {
+  box-shadow: 2px 2px 5px;
+  /* background-color: rgb(158, 147, 132); */
+  background-color: blue;
+}
+#nav-btn {
+  /* border: 1px solid white; */
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+#nav-btn:hover {
+  transform: rotate(0.25turn);
+}
+a {
+  font-family: NavFont;
+  color: aqua;
+  text-decoration: none;
+  font-size: larger;
+  /* color: aliceblue; */
+  /* transform: scale(0); */
+  transition: all 0.5s ease-in-out;
+}
+a:hover {
+  transform: scale(1.2);
+}
+.res {
+  font-size: x-large;
+}
+
+.white {
+  color: white;
+}
+
+.box {
+  font-size: larger;
+  justify-content: space-between;
+  font-family: BodyFont;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+
+  display: flex;
+  color: whitesmoke;
+  margin: 10px;
+  border-radius: 10px;
+  height: auto;
+  box-shadow: 10px 1px 15px;
+  padding: 10px;
+  background-color: #000000dc;
+  backdrop-filter: blur(1px);
+}
+
+.content-container {
+  /* border: 1px solid red; */
+  margin-top: 200px;
+
+  /* border: 2px solid blue; */
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  gap: 10px;
+}
+
+.box-img {
+  height: 200px;
+  object-fit: cover;
+}
+.footer {
+  /* border: 12px solid yellow; */
+  display: flex;
+  align-items: flex-end;
+
+  /* justify-content: end; */
+}
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: rowdy, sans-serif;
+}
+
+@media (max-width: 1280px) {
+  /* styles for phones */
+  .hero-section h1 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 840px) {
+  .navbar {
+    width: 1.2rem;
+    left: 0;
+  }
+  .navbar a {
+    visibility: hidden;
+  }
+
+  .left-container a {
+    margin-top: 50px;
+    /* font-size: 90px; */
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-section h1 {
+    font-size: 50px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+  }
+  .content-container img{
+    object-fit: contain;
+  }
+  #res {
+    color: aqua;
+    font-size: 100px;
+  }.left-container a{
+    font-size: 50px;
+  }
+}
+@media (max-width:500px) {
+  .container{
+    height: 25rem;
+    
+  }
+  .content-container{
+    margin: 0;
+  }
+  .hero-section h1{
+    font-size: 50px;
+  }
+  #res{
+    font-size: 70px;
+    margin-top: 50px;
+    
+  }
+  .left-container a{
+    margin-top: 60px ;
+   
+    font-size: 45px;
+  }
+  
+}
