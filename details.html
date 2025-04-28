@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="details.css" />
+
+    <script src="details.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Enter your details</h2>
+    </header>
+    <div class="container">
+      <div class="shapecontainer">
+        <button class="shape"></button>
+        <button class="shape"></button>
+      </div>
+      <form>
+        <input type="text" id="name" placeholder="FullName" />
+        <input type="email" id="email" placeholder="email" />
+        <input type="text" id="Contact" placeholder="Contact" />
+        <button class="next-btn" type="submit" id="nextbtn">Next</button>
+      </form>
+    </div>
+    <br />
+    <div id="block-container">
+      <div class="shapecontainer">
+        <button class="shape2"></button>
+        <button class="shape2"></button>
+      </div>
+      <div class="btn-container">
+        <h2>Add sections to your resume</h2>
+        <div class="row-container">
+          <button class="sec-btn" id="ach">Achievements</button>
+          <button class="sec-btn" id="exp">Experience</button>
+          <button class="sec-btn" id="edu">education</button>
+          <button class="sec-btn">education</button>
+          <button class="sec-btn">education</button>
+          <button class="sec-btn">education</button>
+          <button class="sec-btn">education</button>
+          <button class="sec-btn">education</button>
+          <button class="sec-btn">education</button>
+          <button class="sec-btn">education</button>
+        </div>
+        <p id="track">blocks choosen:</p>
+        <button class="cmn-btn" id="blockbtn">next</button>
+        <div class="block-input-container" id="blockcont">
+          <p id="inp1">content</p>
+          <input type="text" id="input1" placeholder="Enter here" />
+          <p id="inp2">content</p>
+          <input type="text" id="input2" placeholder="Enter here" />
+          <p id="inp3">content</p>
+          <input type="text" id="input3" placeholder="Enter here" />
+        </div>
+      </div>
+
+      <div class="generate-btn">
+        <button class="GenBtn" id="genbtn">Generate</button>
+        <button class="downloadBtn" id="downloadBtn">download</button>
+        <button class="clearBtn" id="clrBTN">clear</button>
+      </div>
+    </div>
+    <div class="res-container">
+      <div id="resume"></div>
+    </div>
+  </body>
+</html>
