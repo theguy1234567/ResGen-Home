@@ -250,7 +250,13 @@ input {
   }
 }
 @media (max-width: 850px) {
-  .res-container{
+  * {
+    margin: 1px;
+  }
+  h1 {
+    font-size: larger;
+  }
+  .res-container {
     font-size: medium;
   }
   .clearBtn {
