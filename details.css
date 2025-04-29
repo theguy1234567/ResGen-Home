@@ -205,6 +205,7 @@ input {
 #resume {
   font-size: large;
   text-align: start;
+  margin: 20px;
 }
 #resume .heading {
   text-align: center;
@@ -255,6 +256,11 @@ input {
 @media (max-width: 850px) {
   #resume h1 {
     text-align: center;
+  }
+  #resume{
+    font-size: 15px;
+    margin: 15px;
+    
   }
 
   h1 {
