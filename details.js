@@ -43,20 +43,20 @@ function handleBTNclick(buttontype) {
   switch (buttontype) {
     case "Achievements":
       console.log("achievements clicked");
-      if (!array.includes("achievements")) {
+      if (!array.includes("Achievements")) {
         array.push("Achievements");
       }
 
       break;
     case "Experiance":
       console.log("exp clicked");
-      if (!array.includes("experience")) {
+      if (!array.includes("Experience")) {
         array.push("Experience");
       }
       break;
     case "Education":
       console.log("edu clicked");
-      if (!array.includes("education")) {
+      if (!array.includes("Education")) {
         array.push("Education");
       }
 
