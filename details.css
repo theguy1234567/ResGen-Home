@@ -1,15 +1,25 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
+html,
+body {
+  /* width: 100%; */
+  overflow-x: hidden;
+}
+
 body {
   background-color: #1a1a1a;
 }
 header {
+  /* border: 1px solid red; */
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
 }
 .container {
+  /* border: 1px solid blue; */
+  position: relative;
   background-color: #1a1a1a;
   height: 15rem;
 }
@@ -45,6 +55,7 @@ input {
   margin: 10px;
 }
 .shapecontainer {
+  /* border: 2px dotted white; */
   pointer-events: none;
   width: 100%;
   position: absolute;
@@ -62,6 +73,7 @@ input {
   margin: 10px;
 }
 #block-container {
+  /* border: 1px solid darkmagenta; */
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -106,7 +118,7 @@ input {
   border-radius: 15px;
   border: none;
   font-size: 25px;
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
   width: 250px;
   height: 100px;
@@ -123,7 +135,7 @@ input {
   border-radius: 15px;
   border: none;
   font-size: 25px;
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
   width: 250px;
   height: 100px;
@@ -137,7 +149,7 @@ input {
   border-radius: 15px;
   border: none;
   font-size: 25px;
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
   width: 250px;
   height: 100px;
@@ -168,15 +180,14 @@ input {
 .res-container {
   border-radius: 10px;
   background-color: bisque;
-
+  margin-top: 100px;
 
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto
-
+  height: auto;
   /* border: 1px solid red; */
 }
 
@@ -201,4 +212,48 @@ input {
 }
 #resume li {
   text-decoration: dotted;
+}
+@media (max-width: 1080px) {
+  .container form {
+    background-color: aqua;
+  }
+  .container input {
+    width: auto;
+  }
+
+  .shapecontainer {
+    display: none;
+  }
+
+  .generate-btn {
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .generate-btn button {
+    /* visibility: collapse; */
+    height: 50px;
+    width: 150px;
+  }
+  /* .GenBtn {
+    left: 390px;
+    bottom: 0;
+  } */
+  /* .downloadBtn {
+    left: 690px;
+  } */
+  .block-input-container input {
+    width: 20rem;
+  }
+}
+@media (max-width: 850px) {
+  .clearBtn {
+    visibility: collapse;
+  }
+  .downloadBtn {
+    visibility: collapse;
+  }
 }
