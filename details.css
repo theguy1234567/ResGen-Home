@@ -213,6 +213,9 @@ input {
 #resume li {
   text-decoration: dotted;
 }
+#resume h1 {
+  align-items: center;
+}
 @media (max-width: 1080px) {
   .container form {
     background-color: aqua;
@@ -250,9 +253,10 @@ input {
   }
 }
 @media (max-width: 850px) {
-  * {
-    margin: 1px;
+  #resume h1 {
+    text-align: center;
   }
+
   h1 {
     font-size: larger;
   }
