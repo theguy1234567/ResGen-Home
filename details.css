@@ -180,7 +180,7 @@ input {
 .res-container {
   border-radius: 10px;
   background-color: bisque;
-  margin-top: 100px;
+  margin-top: 200px;
 
   text-align: center;
   display: flex;
@@ -229,14 +229,6 @@ input {
     display: none;
   }
 
-  .generate-btn {
-    /* border: 2px solid red; */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .generate-btn button {
     /* visibility: collapse; */
     height: 50px;
@@ -257,11 +249,14 @@ input {
   #resume h1 {
     text-align: center;
   }
-  #resume{
+  #resume {
     font-size: 15px;
-    margin: 15px;
-    
+    margin: 100px;
   }
+  *{
+    font-size: 15px;
+  }
+
 
   h1 {
     font-size: larger;
@@ -272,7 +267,12 @@ input {
   .clearBtn {
     visibility: collapse;
   }
-  .downloadBtn {
-    visibility: collapse;
+
+
+  .GenBtn {
+    left: 20px;
+  }
+  .downloadBtn{
+    right: 20px;
   }
 }
