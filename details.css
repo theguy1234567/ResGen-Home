@@ -251,12 +251,11 @@ input {
   }
   #resume {
     font-size: 15px;
-    margin: 100px;
+    margin: 30px;
   }
-  *{
+  * {
     font-size: 15px;
   }
-
 
   h1 {
     font-size: larger;
@@ -268,11 +267,10 @@ input {
     visibility: collapse;
   }
 
-
   .GenBtn {
     left: 20px;
   }
-  .downloadBtn{
+  .downloadBtn {
     right: 20px;
   }
 }
