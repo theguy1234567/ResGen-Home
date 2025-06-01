@@ -58,11 +58,62 @@ body {
   /* background-color: aqua; */
   min-height: 100vh;
 }
+.shape {
+  background-color: aqua;
+  border: none;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: 10px;
+}
+.shapecontainer {
+  margin-top: 40px;
+  /* border: 2px dotted black; */
+  pointer-events: none;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+.shape2 {
+  background-color: aqua;
+  border: none;
+  height: 400px;
+  width: 200px;
+  border-radius: 100px 100px 0px 0px;
+
+  margin: 10px;
+}
+.Nshapecontainer {
+  /* margin-top: 40px; */
+  /* border: 2px dotted black; */
+  pointer-events: none;
+  width: 90%;
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nshape {
+  background-color: #1a1a1a;
+  border: none;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
 .container {
   /* border: 2px solid aqua; */
 
   background-color: #1a1a1a;
-  height: 20rem;
+  height: 25rem;
   display: flex;
   border-radius: 0px 0px 10px 10px;
 
@@ -70,6 +121,8 @@ body {
   flex-direction: column;
 }
 .navbar {
+  backdrop-filter: blur(1px);
+  z-index: 999;
   width: auto;
   /* border: 1px solid red; */
   max-width: 50rem;
@@ -86,7 +139,6 @@ body {
   margin: 10px;
   border-radius: 20px;
   background-color: rgba(137, 134, 134, 0.241);
-  backdrop-filter: blur(100px);
 }
 .hero-section {
   width: 100%;
@@ -165,7 +217,7 @@ a:hover {
 
 .content-container {
   /* border: 1px solid red; */
-  margin-top: 200px;
+  /* margin-top: 200px; */
 
   /* border: 2px solid blue; */
   height: auto;
@@ -197,12 +249,25 @@ footer {
 
 @media (max-width: 1280px) {
   /* styles for phones */
+
+
+  .content-container{
+    margin-top: 0;
+  }
+
+  .Nshape{
+    width: 910px;
+    height: 50PX;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
   .hero-section h1 {
     font-size: 100px;
   }
 }
 @media (max-width: 840px) {
   .navbar {
+    position: fixed;
     width: 1.2rem;
     left: 0;
   }
@@ -217,43 +282,83 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .shapecontainer {
+    display: none;
+  }
+
   .hero-section h1 {
     font-size: 50px;
   }
-  .box{
+  .hero-section {
+    z-index: 999;
+  }
+
+  .Nshapecontainer {
+    position: absolute;
+  }
+  .Nshape {
+    background-color: aqua;
+    z-index: -1;
+  }
+  .box {
     display: flex;
     flex-direction: column;
   }
-  .content-container img{
+  .content-container img {
     object-fit: contain;
+  }
+  .container {
+    backdrop-filter: blur(10px);
+    background-color: #1a1a1aab;
+  }
+
+  .box {
+    backdrop-filter: blur(10px);
   }
   #res {
     color: aqua;
     font-size: 100px;
-  }.left-container a{
+  }
+  .left-container a {
     font-size: 50px;
   }
 }
-@media (max-width:500px) {
-  .container{
+@media (max-width: 500px) {
+  
+  .container {
+    backdrop-filter: blur(10px);
+    background-color: #1a1a1af8;
+  }
+  .shapecontainer,
+  .Nshapecontainer {
+    display: none;
+  }
+  .container {
     height: 25rem;
+    z-index: -1;
     
   }
-  .content-container{
+  .hero-section{
+    z-index: -1;
+  }
+  .content-container {
     margin: 0;
+    z-index: -1;
   }
-  .hero-section h1{
-    font-size: 50px;
-  }
-  #res{
-    font-size: 70px;
-    margin-top: 50px;
-    
-  }
-  .left-container a{
-    margin-top: 60px ;
-   
-    font-size: 45px;
+  .box{
+    z-index: -1;
   }
   
+  .hero-section h1 {
+    font-size: 50px;
+  }
+  #res {
+    font-size: 70px;
+    margin-top: 50px;
+  }
+  .left-container a {
+    margin-top: 60px;
+
+    font-size: 45px;
+  }
 }
